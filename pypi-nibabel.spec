@@ -4,11 +4,9 @@
 #
 Name     : pypi-nibabel
 Version  : 3.2.2
-Release  : 3
+Release  : 4
 URL      : https://github.com/nipy/nibabel/archive/3.2.2/nibabel-3.2.2.tar.gz
 Source0  : https://github.com/nipy/nibabel/archive/3.2.2/nibabel-3.2.2.tar.gz
-Source1  : https://github.com/nipy/nibabel/archive/3.2.1/nibabel-3.2.1.tar.gz
-Source2  : https://github.com/nipy/nibabel/archive/master.zip
 Summary  : Access a multitude of neuroimaging data formats
 Group    : Development/Tools
 License  : MIT
@@ -73,17 +71,13 @@ python3 components for the pypi-nibabel package.
 %prep
 %setup -q -n nibabel-3.2.2
 cd %{_builddir}/nibabel-3.2.2
-cd ..
-%setup -q -T -n nibabel-master -b 2
-cd ..
-%setup -q -T -n nibabel-3.2.1 -b 1
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1644279548
+export SOURCE_DATE_EPOCH=1646094318
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -99,9 +93,7 @@ python3 setup.py build
 export MAKEFLAGS=%{?_smp_mflags}
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/pypi-nibabel
-cp %{_builddir}/nibabel-3.2.1/COPYING %{buildroot}/usr/share/package-licenses/pypi-nibabel/9c0c415abfe603c9591ab70fa55f3c0f10cab417
 cp %{_builddir}/nibabel-3.2.2/COPYING %{buildroot}/usr/share/package-licenses/pypi-nibabel/9c0c415abfe603c9591ab70fa55f3c0f10cab417
-cp %{_builddir}/nibabel-master/COPYING %{buildroot}/usr/share/package-licenses/pypi-nibabel/9c0c415abfe603c9591ab70fa55f3c0f10cab417
 python3 -tt setup.py build  install --root=%{buildroot}
 echo ----[ mark ]----
 cat %{buildroot}/usr/lib/python3*/site-packages/*/requires.txt || :
