@@ -4,7 +4,7 @@
 #
 Name     : pypi-nibabel
 Version  : 4.0.1
-Release  : 9
+Release  : 10
 URL      : https://github.com/nipy/nibabel/archive/4.0.1/nibabel-4.0.1.tar.gz
 Source0  : https://github.com/nipy/nibabel/archive/4.0.1/nibabel-4.0.1.tar.gz
 Summary  : Access a multitude of neuroimaging data formats
