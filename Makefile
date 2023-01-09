@@ -1,5 +1,5 @@
 PKG_NAME := pypi-nibabel
-URL = https://github.com/nipy/nibabel/archive/4.0.2/nibabel-4.0.2.tar.gz
+URL = https://github.com/nipy/nibabel/archive/5.0.0/nibabel-5.0.0.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
