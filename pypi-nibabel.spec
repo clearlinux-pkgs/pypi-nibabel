@@ -5,7 +5,7 @@
 #
 Name     : pypi-nibabel
 Version  : 5.1.0
-Release  : 19
+Release  : 20
 URL      : https://github.com/nipy/nibabel/archive/5.1.0/nibabel-5.1.0.tar.gz
 Source0  : https://github.com/nipy/nibabel/archive/5.1.0/nibabel-5.1.0.tar.gz
 Summary  : Access a multitude of neuroimaging data formats
