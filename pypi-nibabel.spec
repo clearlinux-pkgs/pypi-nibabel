@@ -7,7 +7,7 @@
 #
 Name     : pypi-nibabel
 Version  : 5.1.0
-Release  : 21
+Release  : 22
 URL      : https://github.com/nipy/nibabel/archive/5.1.0/nibabel-5.1.0.tar.gz
 Source0  : https://github.com/nipy/nibabel/archive/5.1.0/nibabel-5.1.0.tar.gz
 Summary  : No detailed summary available
@@ -66,6 +66,7 @@ python components for the pypi-nibabel package.
 Summary: python3 components for the pypi-nibabel package.
 Group: Default
 Requires: python3-core
+Provides: pypi(nibabel)
 Requires: pypi(numpy)
 Requires: pypi(packaging)
 
