@@ -6,10 +6,10 @@
 # autospec commit: c1050fe
 #
 Name     : pypi-nibabel
-Version  : 5.1.0
-Release  : 22
-URL      : https://github.com/nipy/nibabel/archive/5.1.0/nibabel-5.1.0.tar.gz
-Source0  : https://github.com/nipy/nibabel/archive/5.1.0/nibabel-5.1.0.tar.gz
+Version  : 5.2.0
+Release  : 23
+URL      : https://github.com/nipy/nibabel/archive/5.2.0/nibabel-5.2.0.tar.gz
+Source0  : https://github.com/nipy/nibabel/archive/5.2.0/nibabel-5.2.0.tar.gz
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : MIT
@@ -66,7 +66,6 @@ python components for the pypi-nibabel package.
 Summary: python3 components for the pypi-nibabel package.
 Group: Default
 Requires: python3-core
-Provides: pypi(nibabel)
 Requires: pypi(numpy)
 Requires: pypi(packaging)
 
@@ -75,10 +74,10 @@ python3 components for the pypi-nibabel package.
 
 
 %prep
-%setup -q -n nibabel-5.1.0
-cd %{_builddir}/nibabel-5.1.0
+%setup -q -n nibabel-5.2.0
+cd %{_builddir}/nibabel-5.2.0
 pushd ..
-cp -a nibabel-5.1.0 buildavx2
+cp -a nibabel-5.2.0 buildavx2
 popd
 
 %build
@@ -86,7 +85,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1702069483
+export SOURCE_DATE_EPOCH=1702497572
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
