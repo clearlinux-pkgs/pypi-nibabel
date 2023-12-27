@@ -7,7 +7,7 @@
 #
 Name     : pypi-nibabel
 Version  : 5.2.0
-Release  : 23
+Release  : 24
 URL      : https://github.com/nipy/nibabel/archive/5.2.0/nibabel-5.2.0.tar.gz
 Source0  : https://github.com/nipy/nibabel/archive/5.2.0/nibabel-5.2.0.tar.gz
 Summary  : No detailed summary available
