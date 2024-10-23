@@ -6,10 +6,10 @@
 # autospec commit: f35655a
 #
 Name     : pypi-nibabel
-Version  : 5.3.1
-Release  : 28
-URL      : https://github.com/nipy/nibabel/archive/5.3.1/nibabel-5.3.1.tar.gz
-Source0  : https://github.com/nipy/nibabel/archive/5.3.1/nibabel-5.3.1.tar.gz
+Version  : 5.3.2
+Release  : 29
+URL      : https://github.com/nipy/nibabel/archive/5.3.2/nibabel-5.3.2.tar.gz
+Source0  : https://github.com/nipy/nibabel/archive/5.3.2/nibabel-5.3.2.tar.gz
 Summary  : Access a multitude of neuroimaging data formats
 Group    : Development/Tools
 License  : MIT
@@ -76,10 +76,10 @@ python3 components for the pypi-nibabel package.
 
 
 %prep
-%setup -q -n nibabel-5.3.1
-cd %{_builddir}/nibabel-5.3.1
+%setup -q -n nibabel-5.3.2
+cd %{_builddir}/nibabel-5.3.2
 pushd ..
-cp -a nibabel-5.3.1 buildavx2
+cp -a nibabel-5.3.2 buildavx2
 popd
 
 %build
@@ -87,7 +87,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1729023676
+export SOURCE_DATE_EPOCH=1729693462
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
