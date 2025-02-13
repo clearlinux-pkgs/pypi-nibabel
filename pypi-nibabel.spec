@@ -7,7 +7,7 @@
 #
 Name     : pypi-nibabel
 Version  : 5.3.2
-Release  : 30
+Release  : 31
 URL      : https://github.com/nipy/nibabel/archive/5.3.2/nibabel-5.3.2.tar.gz
 Source0  : https://github.com/nipy/nibabel/archive/5.3.2/nibabel-5.3.2.tar.gz
 Summary  : Access a multitude of neuroimaging data formats
